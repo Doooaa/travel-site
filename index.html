@@ -37,14 +37,15 @@
     <div class="login-form">
         <i class="fas fa-times" id="form-close" onclick="hideform()"></i>
         <form action="">
-            <h3>login</h3>
-            <input type="email" class="box" placeholder="Enter your email">
-            <input type="password" class="box" placeholder="Enter your password">
-            <input type="submit" value="login now" class="btn">
+            <h3>sign up</h3>
+            <input type="name" id="name" class="box" placeholder="Enter your Name">
+            <input type="email"   id="email"     class="box" placeholder="Enter your email">
+            <input type="password" id="password" class="box" placeholder="Enter your password">
+            <input type="submit"   id="submit1" value="login now" class="btn">
             <input type="checkbox" id="remember">
             <label for="remmember"> remember me</label>
             <p>forget password? <a href="">click here</a></p>
-            <p>don't have acount? <a href="">sign up</a></p>
+            <p>don't have acount? <a href="">login</a></p>
         </form>
     </div>
     <!-------------------------------------------------------------------------------->
@@ -86,31 +87,31 @@
 
         <div class="row">
             <div class="image">
-                <img src="images/book-img.svg" alt="">
+                <img src="images/book-img.png" alt="" style="padding: 0;width: 700px; height: 700px;">
             </div>
             <form action="">
                 <div class="inputdiv">
                     <h3>where to go</h3>
-                    <input type="text" placeholder="place name">
+                    <input type="text" id="place" placeholder="place name">
                 </div>
                 <div class="inputdiv">
                     <h3>how many</h3>
-                    <input type="text" placeholder="place name">
+                    <input type="number" id="days" placeholder="place name">
                 </div>
                 <div class="inputdiv">
                     <h3>arrival</h3>
-                    <input type="text" placeholder="place name">
+                    <input type="date" id="arrival" placeholder="place name">
                 </div>
                 <div class="inputdiv">
                     <h3>leaving</h3>
-                    <input type="text" placeholder="place name">
+                    <input type="date" id="leaving" placeholder="place name">
                 </div>
-                <input type="submit" class="btn" value="book now">
+                <input type="submit"  id="submit" class="btn" value="book now" >
             </form>
         </div>
     </section>
       <!---------------------currency-------------------------------------------------------------------------------->
-      <section class="currency" id="currency">
+      <section class="currency" >
 
         <h1 class="heading">
             <span>c</span>
@@ -126,11 +127,13 @@
 
     <div class="price">
         <input type="number" id="amount" name="price" /><br /><br />
-        <button id="calculate-btn">Calculate Prices</button>
-        <div class="egp">Price In EGP <span></span></div>
-        <div class="london">Price In london <span></span></div>
-        <div class="korea">Price In korea <span></span></div>
-        <div class="japan">Price In japan <span></span></div>
+        <button id="calculate-btn">Calculate Prices</button><br /><br/>
+        <div  id="currency">
+        <div class="egp">Price In EGP   <span>  </span></div>
+        <div class="london">Price In london   <span></span></div>
+        <div class="korea">Price In korea   <span></span></div>
+        <div class="japan">Price In japan   <span></span></div>
+        </div>
       </div>
     </section>
     <!------------------------------------------------------------------------------------>
@@ -495,7 +498,7 @@
             </div>
             <form action="">
                 <div class="inputbox">
-                    <input type="text" placeholder="name">
+                    <input type="text" id="" placeholder="name">
                     <input type="email" placeholder="email">
                 </div>
                 <div class="inputbox">
@@ -503,7 +506,7 @@
                     <input type="text" placeholder="subject">
                 </div>
                 <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
-                <input type="submit" class="btn" value="send message">
+                <input type="submit"  class="btn" value="send message">
             </form>
         </div>
     </section>
@@ -547,7 +550,60 @@
 
 
 
+    <script type="module">
+             // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+  import { getDatabase,ref,set,get,child } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+  
 
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDW6wL59fA9ph1p0pKtIKLMH4_HqPiti-Y",
+    authDomain: "travel-project-44d80.firebaseapp.com",
+    projectId: "travel-project-44d80",
+    storageBucket: "travel-project-44d80.appspot.com",
+    messagingSenderId: "380728860910",
+    appId: "1:380728860910:web:3f0af6f4693e7ade07d3ff"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
+  const db=getDatabase(app);
+  document.getElementById("submit1").addEventListener('click',function(e){
+
+    set(ref(db,'user/'+document.getElementById("name").value),
+    {
+
+        name:document.getElementById("name").value,
+        email:document.getElementById("email").value,
+        password:document.getElementById("password").value,
+        password:document.getElementById("password").value,
+    });
+    alert('sign up successfull !');
+  })
+  document.getElementById("submit").addEventListener('click',function(e){
+
+set(ref(db,'user travling information/'+document.getElementById("name").value),
+{
+    place_name:document.getElementById("place").value,
+    how_manydays:document.getElementById("days").value,
+    arrival_date:document.getElementById("arrival").value,
+    leaving_date:document.getElementById("leaving").value,
+    
+});
+let check_date=(document.getElementById("leaving").value)
+-(document.getElementById("arrival").value);
+if(check_date!=document.getElementById("days").value||document.getElementById("place").value!='london'&&
+document.getElementById("place").value!='japan'&&
+document.getElementById("place").value!='eygpt'&&
+document.getElementById("place").value!='korea')
+alert('please enter correct date!');
+else
+alert('booking is successfull !');
+})
+
+    </script>
 
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

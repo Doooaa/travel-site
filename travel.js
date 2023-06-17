@@ -54,10 +54,10 @@ document.querySelector("#calculate-btn").addEventListener("click", function() {
         return result.json();
       })
       .then((currency) => {
-        let egpPrice = document.querySelector(".egp span");
-        let UKPrice = document.querySelector(".london span");
-        let KPWPrice = document.querySelector(".korea span");
-        let JPYPrice = document.querySelector(".japan span");
+        let egpPrice = document.querySelector(".egp span  ");
+        let UKPrice = document.querySelector(".london span  ");
+        let KPWPrice = document.querySelector(".korea span  ");
+        let JPYPrice = document.querySelector(".japan span  ");
   
         egpPrice.innerHTML = Math.round(amount * currency.rates["EGP"]);
         UKPrice.innerHTML = Math.round(amount * currency.rates["GBP"]);
@@ -66,3 +66,5 @@ document.querySelector("#calculate-btn").addEventListener("click", function() {
       });
   });
   
+
+

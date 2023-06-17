@@ -543,27 +543,35 @@ input{
     margin: 0.2em 0;
     border-radius: 10px;
     border: none;
-    background: #9aa0df;
+    background: #b2b4d1;
     outline: none;
     padding: 0 1em;
 }
+#calculate-btn{
+    font-size: 20px;
+    background-color: var(--blue);
+        color: white;
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        
+      
+}
+
 
 .currency{
     font-family: poppins ,sans-serif;
-    margin: 25;
+    background-color: antiquewhite;
+    margin: 35;
     padding: 25;
-    font-size: 27px;
+    font-size: 20px;
     box-sizing: border-box;
     text-transform: capitalize;
     border: none;
     text-decoration: none;
    
 }
-.currency.price{
-    margin: 25;
-    padding: 25;
-    font-size: 27px;
-}
+
 
 
 
