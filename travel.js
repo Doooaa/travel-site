@@ -1,6 +1,6 @@
 let searchBtn = document.querySelector("#search-btn")
 let searchForm = document.querySelector(".search-form") 
-let loginForm = document.querySelector(".login-form")
+let loginForm = document.querySelector(".sign-up")
 let menuBar = document.querySelector("#menu-bar")
 let amenu = document.querySelector(".navbar")
 let vidBtn = document.querySelectorAll(".video-btn")
@@ -65,6 +65,6 @@ document.querySelector("#calculate-btn").addEventListener("click", function() {
         JPYPrice.innerHTML = Math.round(amount * currency.rates["JPY"]);
       });
   });
-  
+ 
 
 
