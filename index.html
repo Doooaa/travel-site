@@ -34,16 +34,20 @@
         </form>
     </header>
 
-    <div class="login-form">
+    <div class="sign-up">
         <i class="fas fa-times" id="form-close" onclick="hideform()"></i>
         <form action="">
             <h3>sign up</h3>
             <input type="name" id="name" class="box" placeholder="Enter your Name">
+
+            <input type="tel" id="phone" class="box" placeholder="Enter your phone">
+            <input type="text" id="address" class="box" placeholder="Enter your address">
+
             <input type="email"   id="email"     class="box" placeholder="Enter your email">
             <input type="password" id="password" class="box" placeholder="Enter your password">
-            <input type="submit"   id="submit1" value="login now" class="btn">
-            <input type="checkbox" id="remember">
-            <label for="remmember"> remember me</label>
+            <input type="submit"   id="submit1" value="sign-up now" class="btn">
+            
+            
             <p>forget password? <a href="">click here</a></p>
             <p>don't have acount? <a href="">login</a></p>
         </form>
@@ -92,11 +96,20 @@
             <form action="">
                 <div class="inputdiv">
                     <h3>where to go</h3>
-                    <input type="text" id="place" placeholder="place name">
+                    <input type="text" id="place" placeholder="place name"style='color: #fff;'>
                 </div>
                 <div class="inputdiv">
                     <h3>how many</h3>
-                    <input type="number" id="days" placeholder="place name">
+                    <input type="number" id="days" placeholder="number of days"style='color: #fff;'>
+                </div>
+                <div class="inputdiv">
+                    <label for="package_selection"><h3>Select from packages</h3></label>
+                        <select id="package_selection">
+                            <option value="1">120$</option>
+                            <option value="2">100$</option>
+                            <option value="3">90$</option>
+                            
+                        </select>
                 </div>
                 <div class="inputdiv">
                     <h3>arrival</h3>
@@ -153,11 +166,13 @@
         </h1>
 
         <div class="container">
+            <!--.............................eygpt................................-->
             <div class="box">
-                <img src="images/p-1.jpg" alt="">
-                <div class="content">
-                    <h3><i class="fas fa-map-marker-alt"></i> korea</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam!</p>
+                <img src="images/g-1.jpg" alt="">
+                <div class="content">  
+                    <h3><i class="fas fa-map-marker-alt"></i> Eygpt</h3>
+                    <p>visit moste interseted places with $120.00 "The Pyramids of Giza 
+                        ,Dahab ,Sharm El Sheikh,Marsa Alam and enjoying with nice journey !</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -165,15 +180,17 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <div class="price">$120.00 <span>$200.00</span></div>
                     <a href="#" class="btn">check now</a>
                 </div>
             </div>
             <div class="box">
-                <img src="images/p-2.jpg" alt="">
-                <div class="content">
-                    <h3><i class="fas fa-map-marker-alt"></i>egypt</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam!</p>
+                <img src="images/alx.jpg" alt="">
+                <div class="content">  
+                    <h3><i class="fas fa-map-marker-alt"></i> Eygpt</h3>
+                    <p>visit moste interseted places with $100.00 "TAbu Simbel 
+                        ,Luxor and the Valley of the Kings ,Alexandria ,Islamic Cairo
+                         ,Cairo's Egyptian Museum and enjoying with nice journey !</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -181,15 +198,16 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <div class="price">$100.00 <span>$140.00</span></div>
                     <a href="#" class="btn">check now</a>
                 </div>
             </div>
             <div class="box">
-                <img src="images/p-3.jpg" alt="">
-                <div class="content">
-                    <h3><i class="fas fa-map-marker-alt"></i> hawaii</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam!</p>
+                <img src="images/Hurghada or Sharm El Sheikh_ From Someone Who's Been to Both!.jpg" alt="">
+                <div class="content">  
+                    <h3><i class="fas fa-map-marker-alt"></i>  Eygpt</h3>
+                    <p>visit moste interseted places with $90.00 "Karnak Temple Complex,Hurghada 
+                        ,Sharm El Sheikh,Al-Muizz Stree and enjoying with nice journey !!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -197,7 +215,61 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <div class="price">$90.00 <span>$110.00</span></div>
+                    <a href="#" class="btn">check now</a>
+                </div>
+                <!--.............................korea................................-->
+            
+            </div>
+            <div class="box">
+                <img src="images/k-1.png" alt="">
+                <div class="content">  
+                    <h3><i class="fas fa-map-marker-alt"></i> Korea</h3>
+                    <p>visit moste interseted places with $120.00 " 
+                        Busan,Jeju Island,Seoul,Gyeongbokgung Palace in Seoul"enjoying with nice journey !</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$120.00 <span>$200.00</span></div>
+                    <a href="#" class="btn">check now</a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="images/k-3.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Korea</h3>
+                    <p>visit moste interseted places with $100.00 "
+                        Incheon,Changdeokgung Palace in Seoul,Tongyeong,Busan"and enjoying with nice journey !</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$100.00 <span>$140.00</span></div>
+                    <a href="#" class="btn">check now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/k-2.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Korea</h3>
+                    <p>visit moste interseted places with $90.00 "Incheon,Tongyeong,Jeonju Hanok Village in Jeonju,
+                        Daeguand enjoying with nice journey !!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$110.00</span></div>
                     <a href="#" class="btn">check now</a>
                 </div>
             </div>
@@ -550,7 +622,7 @@
 
 
 
-    <script type="module">
+<script type="module">
              // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
   import { getDatabase,ref,set,get,child } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
@@ -569,45 +641,74 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 
-  const db=getDatabase(app);
-  document.getElementById("submit1").addEventListener('click',function(e){
+  const db = getDatabase(app);
+document.getElementById("submit1").addEventListener('click', function (e) {
 
-    set(ref(db,'user/'+document.getElementById("name").value),
-    {
 
-        name:document.getElementById("name").value,
-        email:document.getElementById("email").value,
-        password:document.getElementById("password").value,
-        password:document.getElementById("password").value,
-    });
-    alert('sign up successfull !');
-  })
-  document.getElementById("submit").addEventListener('click',function(e){
+  if (!name || !phone || !address || !email || !password) {
+    alert('Please fill all fields!');
+    return;
+  }
+  
+  if (name.length >= 7) {
+    alert('Name should be less than 7 characters!');
+    return;
+  }
 
-set(ref(db,'user travling information/'+document.getElementById("name").value),
-{
-    place_name:document.getElementById("place").value,
-    how_manydays:document.getElementById("days").value,
-    arrival_date:document.getElementById("arrival").value,
-    leaving_date:document.getElementById("leaving").value,
-    
+  if (address.length >= 100) {
+    alert('Address should be less than 100 characters!');
+    return;
+  }
+
+  if (phone.length >= 18) {
+    alert('Phone number should be less than 18 digits!');
+    return;
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address!');
+    return;
+  }
+
+  set(ref(db, 'user/' + name), {
+    name: name,
+    phone: phone,
+    address: address,
+    email: email,
+    password: password,
+  });
+
+  alert('Sign up successful!');
 });
-let check_date=(document.getElementById("leaving").value)
--(document.getElementById("arrival").value);
-if(check_date!=document.getElementById("days").value||document.getElementById("place").value!='london'&&
-document.getElementById("place").value!='japan'&&
-document.getElementById("place").value!='eygpt'&&
-document.getElementById("place").value!='korea')
-alert('please enter correct date!');
-else
-alert('booking is successfull !');
-})
+
+document.getElementById("submit").addEventListener('click',function(e){
+
+set(ref(db,'user traveling information/'+document.getElementById("name").value+'    id :'+document.getElementById("phone").value), {
+   
+    place_name: document.getElementById("place").value,
+    how_manydays: document.getElementById("days").value,
+    arrival_date: document.getElementById("arrival").value,
+    leaving_date: document.getElementById("leaving").value,
+    package_selection: document.getElementById("package_selection").value,
+});
+
+let check_date = (new Date(document.getElementById("leaving").value) - new Date(document.getElementById("arrival").value)) / (1000 * 60 * 60 * 24);
+
+if(check_date != parseInt(document.getElementById("days").value) ||
+   document.getElementById("package_selection").value == "" || 
+   document.getElementById("package_selection").value === '0') {
+    alert('Please enter correct data!');
+} else {
+    alert('Booking is successful!');
+}
+});
 
     </script>
-
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="travel.js"></script>
+
 </body>
 </html>

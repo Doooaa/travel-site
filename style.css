@@ -88,7 +88,7 @@ header .search-form label{
 header .search-form label:hover{
     color: var(--blue);
 }
-.login-form{
+.sign-up{
     position: fixed;
     top: -120%;
     left: 0;
@@ -100,10 +100,10 @@ header .search-form label:hover{
     align-items: center;
     z-index: 10000;
 }
-.login-form.active{
+.sign-up.active{
     top: 0;
 }
-.login-form #form-close{
+.sign-up #form-close{
     position: absolute;
     top: 2rem;
     right: 3rem;
@@ -111,21 +111,21 @@ header .search-form label:hover{
     color: #fff;
     cursor: pointer;
 }
-.login-form form{
+.sign-up form{
     margin: 2rem;
     padding: 1.5rem 2rem;
     border-radius: .5rem;
     background: #fff;
     width: 50rem;
 }
-.login-form form h3{
+.sign-up form h3{
     font-size: 3rem;
     color: #444;
     text-transform: uppercase;
     padding:1rem 0;
     text-align: center;
 }
-.login-form form .box{
+.sign-up form .box{
     width: 100%;
     padding: 1rem;
     font-size: 1.7rem;
@@ -147,22 +147,22 @@ header .search-form label:hover{
     color: #fff;
     background: var(--blue);
 }
-.login-form form .btn{
+.sign-up form .btn{
     display: block;
     width: 100%;
 }
-.login-form form #remember{
+.sign-up form #remember{
     margin: 2rem 0;
 }
-.login-form form label{
+.sign-up form label{
     font-size: 1.5rem;
 }
-.login-form form p{
+.sign-up form p{
     padding: .5rem 0;
     font-size: 1.5rem;
     color: #666;
 }
-.login-form form p a{
+.sign-up form p a{
     color: var(--blue);
 }
 #menu-bar{
@@ -288,22 +288,46 @@ section{
 .book .row form{
     flex: 1 1 40rem;
     padding: 2rem;
+    
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: .5rem;
 }
+/*coding of css to booking form*/
+
 .book .row form .inputdiv input{
-    width: 100%;
-    padding: 1rem;
-    border: 1rem solid rgba(0, 0, 0, 0.1);
-    font-size: 1.7rem;
-    color: #333;
-    text-transform: none;
+    width: 95%;
+    height: 40px;
+    font-size: 2em;
+    color:#fff;
+    margin: 0.2em 0;
+    border-radius: 10px;
+    border: none;
+    background: #b2b4d1;
+    outline: none;
+    padding: 0 1em;
 }
+
+
+#package_selection ,#days , #place{
+    width: 95%;
+    height: 40px;
+    font-size: 2em;
+    color:#fff;
+    margin: 0.2em 0;
+    border-radius: 10px;
+    border: none;
+    background: #b2b4d1;
+    outline: none;
+    padding: 0 1em;
+  }
 .book .row form .inputdiv h3{
     font-size: 2rem;
     padding: 1rem 0;
     color: #666;
 }
+
+
+/*coding of css to packages */
 .packages .container{
     display: flex;
     flex-wrap: wrap;
@@ -540,6 +564,7 @@ input{
     width: 95%;
     height: 40px;
     font-size: 1em;
+    color:#fff;
     margin: 0.2em 0;
     border-radius: 10px;
     border: none;
@@ -571,6 +596,7 @@ input{
     text-decoration: none;
    
 }
+
 
 
 
